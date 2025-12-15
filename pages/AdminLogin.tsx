@@ -22,9 +22,15 @@ export const AdminLogin: React.FC = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Admin Login Attempt:", formData);
-    // Simulate admin login
-    navigate('/admin/dashboard'); 
+    
+    // Check credentials
+    if (formData.username === 'bai227098@gmail.com' && formData.password === 'Hakunamatata@1') {
+      console.log("Admin Login Success");
+      // Navigate to the main dashboard (assuming shared dashboard for prototype, or specialized admin route)
+      navigate('/dashboard'); 
+    } else {
+      alert('بيانات الدخول غير صحيحة. يرجى التحقق من البريد الإلكتروني وكلمة المرور.');
+    }
   };
 
   return (
