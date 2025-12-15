@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdScale | حلول إعلانية متقدمة</title>
+    <meta name="description" content="وكالة إعلانات رقمية شريكة لـ Meta توفر حسابات إعلانية عالية الموثوقية للمعلنين المحترفين." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              meta: {
+                blue: '#0668E1', // Meta Blue
+                navy: '#1C2B33', // Deep Professional Navy
+                light: '#F0F2F5', // Light Gray/White
+              },
+              saas: {
+                primary: '#10B981', // Emerald 500
+                dark: '#047857', // Emerald 700
+                light: '#D1FAE5', // Emerald 100
+                surface: '#F9FAFB',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-slate-800 font-sans antialiased selection:bg-saas-primary selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
